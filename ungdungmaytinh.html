@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ungdungmaytinh</title>
+</head>
+<body>
+<input type="number" name="number" placeholder="Nhập số thứ nhất" id="solieu"></input>
+<input type="number" name="number" placeholder="Nhập số thứ hai" id="solieu1"></input>
+</br>
+<button onclick="Cong()">Cộng</button>
+<button onclick="Tru()">Trừ</button>
+<button onclick="Nhan()">Nhân</button>
+<button onclick="Chia()">Chia</button>
+<br/>
+<h4>Result</h4>
+<div id="result">Đây là kết quả</div>
+<script>
+    function Cong() {
+        let number1 = +document.getElementById("solieu").value;
+        let number2 = +document.getElementById("solieu1").value;
+        let result = number1 + number2;
+        console.log(result)
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function Tru() {
+        let number1 = +document.getElementById("solieu").value;
+        let number2 = +document.getElementById("solieu1").value;
+        let result = number1-number2;
+        document.getElementById("result").innerHTML = result;
+
+    }
+
+    function Nhan() {
+        let number1 = +document.getElementById('solieu').value;
+        let number2 = +document.getElementById('solieu1').value;
+        let result = number1 * number2;
+        console.log(result)
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function Chia() {
+        let number1 = +document.getElementById('solieu').value;
+        let number2 = +document.getElementById('solieu1').value;
+        let result = number1/number2;
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>
+
+</body>
+</html>
